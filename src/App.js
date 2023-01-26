@@ -1,9 +1,12 @@
 
 import { useEffect, useState } from 'react';
+import CardList from './components/card-list/card-list.component';
 
 const App = () => {
-  const [quote, setQuote] = useState()
-  const [character, setCharacter] = useState();
+
+  const [name, setName] = useState()
+  const [race, setRace] = useState()
+  const [wiki, setWiki] = useState();
 
   useEffect(() => {
     const headers = {
@@ -11,14 +14,18 @@ const App = () => {
       'Authorization': 'Bearer e_VutD0QN1FtMnmeq9Um'
     }
     const fetchData = async () => {
-      const rawQuotes = await fetch('https://the-one-api.dev/v2/character', {
+      const rawCharacter = await fetch('https://the-one-api.dev/v2/character', {
         headers: headers
       })
-      const quotes = await rawQuotes.json();
-      console.log(quotes)
-      const quote = quotes.docs[Math.floor(Math.random() * quotes.docs.length)];
-      setQuote(quote.wikiUrl)
-      setCharacter(quote.name)
+      const characterObj = await rawCharacter.json();
+      console.log(characterObj)
+
+
+      /*const character = characters.docs[Math.floor(Math.random() * characters.docs.length)];
+      //setArr(characters.docs)
+      setName(character.name)
+      setRace(character.race)
+      setWiki(character.wikiUrl)
 
       /*const rawCharacters = await fetch('https:/ / the - one - api.dev / v2 / character ? _id = ' + quote.character, { headers: headers })
       const characters = await rawCharacters.json();
@@ -30,9 +37,19 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <blockquote>{quote}</blockquote>
-      <cite>- {character}</cite>
+    <div className='App'>
+      <h1 className='app-title'>Tolkien Character Finder</h1>
+
+
+
+      {/*<SearchBox
+        className="monsters-search-box"
+        placeholder="search monsters"
+        onChangeHandler={onSearchChange}
+      /> 
+   
+      <CardList monsters={characters} />  */}
+
     </div>
 
   );
