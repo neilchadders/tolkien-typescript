@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 import CardList from './components/card-list/card-list.component';
 
 const App = () => {
-
-  const [name, setName] = useState()
-  const [race, setRace] = useState()
-  const [wiki, setWiki] = useState();
+  const [characters, setCharacter] = useState("")
 
   useEffect(() => {
     const headers = {
@@ -17,9 +14,9 @@ const App = () => {
       const rawCharacter = await fetch('https://the-one-api.dev/v2/character', {
         headers: headers
       })
-      const characterObj = await rawCharacter.json();
-      console.log(characterObj)
+      const charactersObj = await rawCharacter.json();
 
+      setCharacter(charactersObj.docs)
 
       /*const character = characters.docs[Math.floor(Math.random() * characters.docs.length)];
       //setArr(characters.docs)
@@ -41,14 +38,15 @@ const App = () => {
       <h1 className='app-title'>Tolkien Character Finder</h1>
 
 
-
       {/*<SearchBox
         className="monsters-search-box"
         placeholder="search monsters"
         onChangeHandler={onSearchChange}
       /> 
-   
-      <CardList monsters={characters} />  */}
+         */}
+
+      <CardList characters={characters} />
+
 
     </div>
 

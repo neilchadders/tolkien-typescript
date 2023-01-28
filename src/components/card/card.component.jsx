@@ -1,6 +1,7 @@
 const Card = ({ character }) => {
     const { name, race, id } = character;
 
+
     return (
         <div className="card-container" key={id}>
 
