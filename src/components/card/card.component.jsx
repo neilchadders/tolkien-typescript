@@ -2,11 +2,10 @@
 import './card.styles.css'
 
 const Card = ({ character }) => {
-    const { name, race, realm, id } = character;
+    const { id, name, race, realm } = character;
 
     return (
-        <div className="card-container" key={id}>
-
+        <div key={id} className="card-container">
             <h2>{name}</h2>
             <p>{race}</p>
             <p>{realm}</p>

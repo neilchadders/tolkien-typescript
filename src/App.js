@@ -23,7 +23,19 @@ const App = () => {
         race: "Elf",
         realm: "Mirkwood",
         id: "321ABC"
-      }
+      },
+      {
+        name: "Frodo",
+        race: "Hobbit",
+        realm: "Shire",
+        id: '1abcsrqrvv98'
+      },
+      {
+        name: "Ganalf",
+        race: "Wizard",
+        realm: "Gondor",
+        id: '123abcweqqwv096'
+      },
     ]
 
   const onSearchChange = (event) => {
