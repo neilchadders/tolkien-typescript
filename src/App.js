@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
+import Title from './components/title/title.component'
 import SearchBox from './components/search-box/search-box.component';
 import CardList from './components/card-list/card-list.component';
 import characterArr from './characters';
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1 className='app-title'>Tolkien Character Finder</h1>
+      <Title />
 
 
       <SearchBox
