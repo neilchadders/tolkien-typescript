@@ -1,5 +1,5 @@
 
-import './card.styles.css'
+import './card.styles.scss'
 
 const Card = ({ character }) => {
     const { name, race, realm, link } = character;

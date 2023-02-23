@@ -32,7 +32,7 @@ const App = () => {
         onChangeHandler={onSearchChange}
       />
 
-      <CardList characters={filteredCharacters} />
+      <CardList className="main-section" characters={filteredCharacters} />
 
 
     </div>
