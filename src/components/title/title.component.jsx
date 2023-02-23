@@ -5,7 +5,7 @@ const Title = () => {
 
     return (
 
-        <h1>Tolkein Character Finder</h1>
+        <h1 className="title"  > Tolkein Character < br /> Finder</h1 >
     )
 }
 export default Title
