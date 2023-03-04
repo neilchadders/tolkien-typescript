@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F5DD90;
+  background-size: cover;
+
+
+
 }
 
 code {
@@ -13,11 +18,5 @@ code {
 }
 
 
-font-family: 'Anton',
-sans-serif;
 font-family: 'MedievalSharp',
 cursive;
-font-family: 'Open Sans',
-sans-serif;
-font-family: 'Oswald',
-sans-serif;

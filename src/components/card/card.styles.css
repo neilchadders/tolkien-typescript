@@ -1,5 +1,15 @@
+.pic {
+
+    height: 150px;
+    object-fit: cover;
+}
+
+
 .card-container {
+    max-width: 300px;
     background-color: #E7EBC5;
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'MedievalSharp', cursive;
+    border: 3px black solid;
 }

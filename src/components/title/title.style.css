@@ -2,4 +2,17 @@
     text-align: center;
     font-family: 'MedievalSharp', cursive;
     font-size: 70px;
+    padding-top: 100px;
+
+
+}
+
+.back-img {
+
+    opacity: 0.2;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 0;
 }
