@@ -1,8 +1,11 @@
 .title {
     text-align: center;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 70px;
-    padding-top: 100px;
+    font-family: 'Medium', 'MedievalSharp', cursive;
+    font-size: 80px;
+    font-weight: 900;
+    padding-top: 30px;
+    line-height: 130px;
+
 
 
 }
@@ -15,4 +18,5 @@
     margin: 0;
     position: absolute;
     z-index: 0;
+    position: 0;
 }

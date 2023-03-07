@@ -1,15 +1,27 @@
 .pic {
 
-    height: 150px;
+    height: 260px;
+
+    width: 260px;
+
     object-fit: cover;
 }
 
 
 .card-container {
     max-width: 300px;
-    background-color: #E7EBC5;
+    background-color: black;
     text-align: center;
     padding-bottom: 20px;
-    font-family: 'MedievalSharp', cursive;
+    font-family: 'Medium', 'MedievalSharp', cursive;
+    color: aliceblue;
     border: 3px black solid;
+    position: relative;
+    font-weight: 700;
+
+}
+
+.link {
+    color: aliceblue;
+    text-decoration: none;
 }

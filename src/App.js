@@ -2,6 +2,7 @@
 import { useState } from 'react';
 
 import './App.css'
+import './assets/RingbearerMedium.woff'
 
 
 import Title from './components/title/title.component'
@@ -38,12 +39,12 @@ const App = () => {
 
 
       <SearchBox
-        className="search-box"
+        className="search-box overlay"
         placeholder="search characters"
         onChangeHandler={onSearchChange}
       />
 
-      <CardList className="main-section" characters={filteredCharacters} />
+      <CardList className="main-section overlay" characters={filteredCharacters} />
 
 
     </div>

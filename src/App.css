@@ -1,0 +1,12 @@
+.search-box {
+    position: relative;
+    z-index: 10;
+}
+
+@font-face {
+    font-family: "Medium";
+    /*Can be any text*/
+    src: local("RingbearerMedium"),
+        url("./assets/RingbearerMedium.woff") format("woff");
+    ;
+}
