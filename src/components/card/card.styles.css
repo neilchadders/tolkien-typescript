@@ -5,23 +5,27 @@
     width: 260px;
 
     object-fit: cover;
+    border-bottom: gold 4px solid;
 }
 
 
 .card-container {
     max-width: 300px;
-    background-color: black;
+
     text-align: center;
     padding-bottom: 20px;
     font-family: 'Medium', 'MedievalSharp', cursive;
-    color: aliceblue;
-    border: 3px black solid;
-    position: relative;
+    color: black;
+    background: linear-gradient(0deg, rgba(0, 114, 0, 0.3), rgba(0, 114, 150, 0.3)), url("https://i.stack.imgur.com/oslRB.png");
+
     font-weight: 700;
+    border: gold 2px solid;
+    -webkit-box-shadow: -4px 0px 3px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: -4px 0px 3px 4px rgba(0, 0, 0, 0.7);
 
 }
 
 .link {
-    color: aliceblue;
+    color: black;
     text-decoration: none;
 }
